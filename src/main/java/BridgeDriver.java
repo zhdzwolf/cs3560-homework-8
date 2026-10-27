@@ -49,5 +49,21 @@ public class BridgeDriver {
                 );
         bitcoinSMS.notifyPayment();
 
+        System.out.println("Part 3:");
+
+        // online + push
+        PaymentTypes.PaymentNotification onlinePush =
+                new PaymentTypes.OnlinePaymentNotification(
+                        new NotificationTypes.PushChannel(), "PayPal"
+                );
+        onlinePush.notifyPayment();
+
+        // bitcoin + push
+        PaymentTypes.PaymentNotification bitcoinPush =
+                new PaymentTypes.BitcoinPaymentNotification(
+                        new NotificationTypes.PushChannel()
+                );
+        bitcoinPush.notifyPayment();
+
     }
 }
