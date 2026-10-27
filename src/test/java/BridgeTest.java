@@ -1,8 +1,6 @@
 import BridgeFiles.*;
 import org.junit.jupiter.api.Test;
 
-import javax.management.Notification;
-
 import static org.junit.jupiter.api.Assertions.*;
 
 public class BridgeTest {

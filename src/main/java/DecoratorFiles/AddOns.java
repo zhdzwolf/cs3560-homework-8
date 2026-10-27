@@ -18,7 +18,7 @@ public class AddOns {
         }
     }
 
-    public class Ketchup extends Toppings {
+    public static class Ketchup extends Toppings {
         public Ketchup(FoodItems foodItems) {
             super(foodItems);
         }
@@ -32,7 +32,7 @@ public class AddOns {
         }
     }
 
-    public class Mustard extends Toppings {
+    public static class Mustard extends Toppings {
         public Mustard(FoodItems foodItems) {
             super(foodItems);
         }
@@ -46,7 +46,7 @@ public class AddOns {
         }
     }
 
-    public class Mayo extends Toppings {
+    public static class Mayo extends Toppings {
         public Mayo(FoodItems foodItems) {
             super(foodItems);
         }
@@ -60,7 +60,7 @@ public class AddOns {
         }
     }
 
-    public class Cheese extends Toppings {
+    public static class Cheese extends Toppings {
         public Cheese(FoodItems foodItems) {
             super(foodItems);
         }
@@ -74,7 +74,7 @@ public class AddOns {
         }
     }
 
-    public class Onions extends Toppings {
+    public static class Onions extends Toppings {
         public Onions(FoodItems foodItems) {
             super(foodItems);
         }

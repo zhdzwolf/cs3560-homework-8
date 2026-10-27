@@ -2,7 +2,7 @@ package DecoratorFiles;
 
 public class FoodTypes {
 
-    public class Burger implements FoodItems {
+    public static class Burger implements FoodItems {
         @Override
         public String getDescription() {
             return "Burger";
@@ -13,7 +13,7 @@ public class FoodTypes {
         }
     }
 
-    public class Fries implements FoodItems {
+    public static class Fries implements FoodItems {
         @Override
         public String getDescription() {
             return "Fries";
@@ -24,7 +24,7 @@ public class FoodTypes {
         }
     }
 
-    public class Pizza implements FoodItems {
+    public static class Pizza implements FoodItems {
         @Override
         public String getDescription() {
             return "Pizza";
@@ -35,7 +35,7 @@ public class FoodTypes {
         }
     }
 
-    public class HotDog implements FoodItems {
+    public static class HotDog implements FoodItems {
         @Override
         public String getDescription() {
             return "Hot Dog";
@@ -46,7 +46,7 @@ public class FoodTypes {
         }
     }
 
-    public class Slurpee implements FoodItems {
+    public static class Slurpee implements FoodItems {
         @Override
         public String getDescription() {
             return "Slurpee";
