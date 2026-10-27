@@ -1,3 +1,5 @@
+package BridgeFiles;
+
 public class NotificationTypes {
 
     interface NotificationChannel {
