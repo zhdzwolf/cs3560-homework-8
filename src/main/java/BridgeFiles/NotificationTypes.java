@@ -2,25 +2,25 @@ package BridgeFiles;
 
 public class NotificationTypes {
 
-    interface NotificationChannel {
+    public interface NotificationChannel {
         void sendNotification(String message);
     }
 
-    class EmailChannel implements NotificationChannel {
+    public static class EmailChannel implements NotificationChannel {
         @Override
         public void sendNotification(String message) {
             System.out.println("Email notification:  " + message);
         }
     }
 
-    class SMSChannel implements NotificationChannel {
+    public static class SMSChannel implements NotificationChannel {
         @Override
         public void sendNotification(String message) {
             System.out.println("SMS notification:  " + message);
         }
     }
 
-    class PushChannel implements NotificationChannel {
+    public static class PushChannel implements NotificationChannel {
         @Override
         public void sendNotification(String message) {
             System.out.println("Push notification:  " + message);

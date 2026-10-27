@@ -2,7 +2,7 @@ package BridgeFiles;
 
 public class PaymentTypes {
 
-    abstract class PaymentNotification {
+    public abstract static class PaymentNotification {
         protected NotificationTypes.NotificationChannel channel;
 
         public PaymentNotification(NotificationTypes.NotificationChannel channel) {
@@ -12,8 +12,8 @@ public class PaymentTypes {
         public abstract void notifyPayment();
     }
 
-    class OnlinePaymentNotification extends PaymentNotification {
-        private String paymentMethod;
+    public static class OnlinePaymentNotification extends PaymentNotification {
+        private final String paymentMethod;
 
         public OnlinePaymentNotification(NotificationTypes.NotificationChannel channel, String paymentMethod) {
             super(channel);
@@ -28,7 +28,7 @@ public class PaymentTypes {
         }
     }
 
-    class CashOnDeliveryNotification extends PaymentNotification {
+    public static class CashOnDeliveryNotification extends PaymentNotification {
         public CashOnDeliveryNotification(NotificationTypes.NotificationChannel channel) {
             super(channel);
         }
@@ -40,7 +40,7 @@ public class PaymentTypes {
         }
     }
 
-    class BitcoinPaymentNotification extends PaymentNotification {
+    public static class BitcoinPaymentNotification extends PaymentNotification {
         public BitcoinPaymentNotification(NotificationTypes.NotificationChannel channel) {
             super(channel);
         }
